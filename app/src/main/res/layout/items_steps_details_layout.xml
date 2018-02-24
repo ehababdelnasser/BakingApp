@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#999999">
+
+    <ImageView
+        android:id="@+id/img_videos"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scaleType="fitCenter"
+        card_view:srcCompat="@drawable/no_video" />
+    <TextView
+        android:id="@+id/step_txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/txt2"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/but"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="@string/txt3"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/but2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_weight="0.07"
+            android:background="@color/colorPrimaryDark"
+            android:linksClickable="true"
+            android:padding="10dp"
+            android:text="@string/txt4"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:layout_marginLeft="170dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:padding="5dp"
+        android:id="@+id/tmp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+</LinearLayout>
